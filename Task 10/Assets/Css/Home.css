@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-image: url("../images/Wallpaper.jfif");
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 40%;
+    min-height: 607px;
+    height: 100%;
+}
+.container{
+    height: 100%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto;
+}
+.header span{
+    color: #4245DC;
+}
+.header{
+    margin-bottom: 40px;
+}
+.sign_in{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+.sign_in p{
+    margin-bottom: 5px;
+    grid-column: 1/4;
+}
+.sign_in button{
+    height: 30px;
+    margin-right: 5px;
+}
+.continue{
+    display: flex;
+    align-items: baseline;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.continue span{
+    color:rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 5px;
+}
+.continue hr{
+    width: 100%;
+    margin: 3px;
+}
+.additions{
+    display: flex;
+}
+.additions p{
+    margin: 5px;
+    
+}
+.additions p:nth-child(2){
+    cursor: pointer;
+    
+}
+.additions div{
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+.sign_in_button button{
+    width: 100%;
+    padding: 10px;
+}
+.form input{
+    width: 100%;
+    height: 30px;
+    transition: all 0.2s;
+    border: 1px black solid;
+}
+.form input[type = password]:focus{
+    outline: none;
+}
+.focus[type = password]:focus{
+    outline: none;
+    border: 2px cyan solid;
+}
+.true_email[type = text]:focus{
+    outline: none;
+    border: 2px greenyellow solid;
+}
+.wrong_email[type = text]:focus{
+    outline: none;
+    border: 2px rgb(226, 13, 13) solid;
+}
+.true_password[type = password]:focus{
+    outline: none;
+    border: 2px greenyellow solid;
+}
+.medium_password[type = password]:focus{
+    outline: none;
+    border: 2px rgb(244, 255, 36) solid;
+}
+.wrong_password[type = password]:focus{
+    outline: none;
+    border: 2px rgb(226, 13, 13) solid;
+}
+.true_password{
+    color: greenyellow;
+}
+.medium_password{
+    color: rgb(244, 255, 36);
+}
+.wrong_password{
+    color: rgb(226, 13, 13);
+}
+@media only screen and (max-width:600px) {
+    .body{
+        width: 100%;
+    }
+    body{
+        background-image: none;
+    }
+    .container{
+        width: 70%;
+    }
+}

@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI',sans-serif;
+}
+body{
+    height: 3000px;
+    width: 100%;
+}
+.header{
+    padding: 20px 100px 10px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.header_left{
+    display: flex;
+}
+.header_left i{
+    display: none;
+    font-size: 48px;
+}
+.profilephoto{
+    display: none;
+}
+.profilephoto img{
+    border-radius: 90px;
+}
+.header_left ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    align-items: center;
+    height: 50px;
+    padding-left:60px ;
+    font-family: 'Segoe UI',sans-serif;
+}
+.header_right{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.Sign_in{
+    background:none;
+    border: none;
+    height: 40px;
+    font-family: 'Segoe UI',sans-serif;
+    cursor: pointer;
+}
+.Sign_up{
+    background-color: #5920BC;
+    color: white;
+    border: none;
+    height: 40px;
+    border-radius: 3px;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+}
+.background_image{
+    position: absolute;
+    height: 160px;
+    width: 100%;
+    background-color: #EAE6FF;
+    z-index: -1;
+}
+.container{
+    margin-top: 60px;
+    padding: 0 90px 0 90px;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+.find_your{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    padding-left: 10px;
+}
+.image{
+    display: flex;
+    align-items: flex-end;
+
+    width: 350px;
+    height: 250px;
+}
+.image img{
+
+    z-index: -1;
+    border-radius: 5px;
+}
+.service_payment{
+    margin: 30px;
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    overflow: hidden;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.service_names > div{
+    font-size: 12px;
+    border-style: solid;
+    padding: 10px;
+    border-width: 0 0 1px 0;
+    border-color: rgb(184, 182, 182);
+    cursor: pointer;
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+.mobile{
+    height: 250px;
+    width: 100%;
+    background-color: #EAE6FF;
+}
+.mobilecontainer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    height: 100%;
+}
+.phone{
+    height: 100%;
+    display: flex;
+    align-self: flex-end;
+}
+.phone img{
+    align-self: flex-end;
+}
+.download{
+    width: 550px;
+    align-self: center;
+}
+.download p:first-child{
+    font-size: 36px;
+    font-weight: 600;
+    color: black;
+    padding: 10px 0 10px 0;
+
+}
+.download p{
+    font-size: 16px;
+    color: gray;
+    padding: 10px;
+}
+.download img{
+    padding: 10px;
+}
+@media only screen and (max-width:600px) {
+    .services{
+        grid-template-columns: auto
+    }
+    .header{
+        padding:20px;
+    }
+    .header_left{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .header_right{
+        display: none;
+    }
+    .header_left ul{
+        display: none;
+    }
+    .header_left i{
+        display: inline;
+        width: 60px;
+        height: 60px;
+    }
+    .profilephoto{
+        display: inline;
+    }
+    .phone{
+        display: none;
+    }
+    .service_names{
+        display: none;
+    }
+    .image a{
+        display: inline;
+    }
+    .image{
+        display: flex;
+        align-items: flex-end;
+    
+        width: 100%;
+        height: 250px;
+    }
+    .image img{
+        width: 100%;
+        z-index: -1;
+        border-radius: 5px;
+    }
+    .container{
+        margin-top: 60px;
+        padding: 0;
+        margin-bottom: 100px;
+        overflow: hidden;
+    }
+    .service{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .find_your{
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 40px;
+        padding-left: 10px;
+        text-align: center;
+    }
+}
+@media only screen and (min-width:600px ) and ( max-width:900px ) {
+    .services{
+        grid-template-columns: auto auto
+    }
+    
+    
+}
+
+
+

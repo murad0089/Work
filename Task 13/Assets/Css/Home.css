@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+/* .search-box{
+    display: none;
+} */
+.search-box i{
+    position: relative;
+    left: 25px;
+}
+.search-box input{
+    padding-left: 25px;
+    border-radius: 15px;
+    height: 20px;
+}
+.location{
+    display: none;
+}
+.today{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    background-color:paleturquoise;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-between;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    display: flex;
+}
+.next_days{
+    background-color: gray;
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+  
+}
+.contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.variables{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contents p{
+    padding: 10px;
+    font-size: 24px;
+}
+.variables p{
+    padding: 10px;
+    font-size: 16px;
+}
+.all_next_days{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    
+}
+.next{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    transition: all 0.4s;
+    border-radius: 5px;
+    height: 80px;
+    width: 50px;
+
+
+}
+.next:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.container{
+    display: flex;
+}

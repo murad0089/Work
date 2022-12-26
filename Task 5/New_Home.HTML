@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="New_Home.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="header">
+                <span>THE</span>
+                <span>BROWNIE</span>
+            </div>
+            <img src="menu.png" class="menu_icon" onclick="myFunction()">
+            <nav id="Menu">
+                <ul>
+                    <li><a class="active" href="#Home">HOME</a></li>
+                    <li><a href="#About">ABOUT</a></li>
+                    <li><a href="#Product">PRODUCT</a></li>
+                    <li><a href="#Services">SERVICES</a></li>
+                    <li><a href="#Contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="news">
+            <img src="download.jfif" class="news_image">
+            <div id="Home" class="news_description">
+                <h2>Salamlar hər kəsə</h2>
+                <h4>Bekarçılığın son həddini necə yaşamaq olar?</h4>
+                <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore dolores molestiae, culpa sint harum delectus omnis natus sapiente voluptatibus cupiditate suscipit at quia dicta eaque quos sit assumenda expedita!</h6>
+            </div>
+        </div>
+        <div class="news">
+            <img src="1.jpg" class="news_image">
+            <div id="About" class="news_description">
+                <h2>Necə başlamaq lazımdır?</h2>
+                <h4>İlk öncə Murad olmağı bacarmalısız</h4>
+                <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore dolores molestiae, culpa sint harum delectus omnis natus sapiente voluptatibus cupiditate suscipit at quia dicta eaque quos sit assumenda expedita!</h6>
+            </div>
+        </div>
+        <div class="news">
+            <img src="2.jpg" class="news_image">
+            <div id="Product" class="news_description">
+                <h2>Bir yerdən sonra öyrəşəcəksiniz</h2>
+                <h4>Bunun üçün HTML və CSS işləyərkən özünüzə əyləncə tapa bilməlisiniz.</h4>
+                <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore dolores molestiae, culpa sint harum delectus omnis natus sapiente voluptatibus cupiditate suscipit at quia dicta eaque quos sit assumenda expedita!</h6>
+            </div>
+        </div>
+        <div class="news">
+            <img src="3.jpg" class="news_image">
+            <div id="Services" class="news_description">
+                <h2>Müştəri məmnunniyəti</h2>
+                <h4>Həmişə kreativ olmaq lazımdır</h4>
+                <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore dolores molestiae, culpa sint harum delectus omnis natus sapiente voluptatibus cupiditate suscipit at quia dicta eaque quos sit assumenda expedita!</h6>
+            </div>
+        </div>
+        <div id="Contact" class="news">
+            <img src="4.jpg" class="news_image">
+            <div class="news_description">
+                <h2>Əlaqə üçün:</h2>
+                <h4>Zarafat edirəm, özünüzü zibilə salmayın</h4>
+                <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam labore dolores molestiae, culpa sint harum delectus omnis natus sapiente voluptatibus cupiditate suscipit at quia dicta eaque quos sit assumenda expedita!</h6>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("Menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+</body>
+</html>

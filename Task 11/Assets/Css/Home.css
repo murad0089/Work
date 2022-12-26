@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body img{
+    position: fixed;
+    z-index: -1;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.container{
+    margin-top: 30px;
+
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.5);
+    grid-template-columns: repeat(3,300px);
+    row-gap: 30px;
+}
+.name{
+    text-align: center;
+    grid-column: 1/4;
+}
+.name p{
+    color: white;
+    font-size: 36px;
+    font-weight: 800;
+}
+.header{
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-around;
+}
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    height: 60px;
+    width: 60px;
+    border-radius: 40px;
+
+}
+.score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    height: 50px;
+    width: 70px;
+    border-radius: 80px;
+
+}
+.Start{
+    width: 150px;
+    height: 30px;
+}
+#hint{
+    margin-top: 10px;
+}
+.how_to_play{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 200px;
+    background-color: black;
+    padding: 20px;
+    margin: 0 0 20px 20px;
+
+}
+.how_to_play p{
+    font-size: 24px;
+    font-weight: 800;
+}
+.abc{
+    display: grid;
+    grid-template-columns: repeat(5,40px);
+}   
+.letter{
+    background-color: cyan;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.letter:last-child{
+    grid-column: 3/4;
+}
+.first{
+    width: 250px;
+    height: 30px;
+    color: black;
+    text-align: center;
+    background-color: bisque;
+    font-size: 24px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.next{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.each{
+    width: 30px;
+    height: 30px;
+    background-color: bisque;
+    margin-right: 10px;
+    color: black;
+    text-align: center;
+}
+.all_letters{
+    display: flex;
+    justify-content: space-around;
+}
+.letterred{
+    background-color: rgb(255, 51, 0);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.letterred:last-child{
+    grid-column: 3/4;
+}
